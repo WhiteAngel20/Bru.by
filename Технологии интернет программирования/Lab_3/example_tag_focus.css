@@ -1,0 +1,16 @@
+.label{
+    width: 40px;
+    float: left;
+    text-align: right;
+    color: darksalmon;
+}
+.form-item{
+    width: 100px;
+    margin-left: 10px;
+    border: 2px solid #ff0000;
+    padding: 5px;
+}
+.form-text:focus{
+    background: #ffe;
+    border: 2px solid #0006ff;
+}

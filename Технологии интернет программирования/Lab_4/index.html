@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            TASK 1, 2 var 3
+        </title>
+        <script src="tasks.js" type="text/javascript"></script>
+        <style>
+			fieldset {
+				width: 250px;
+				border: 1px solid #dcdcdc;
+				border-radius: 10px;
+				padding: 20px;
+				text-align: right;
+			}
+			fieldset:hover{
+				border-color: #7f8c8d;
+			}
+			
+			legend {
+				background-color: #ccd1d1;
+				border: 2px solid #dcdcdc;
+				border-radius: 10px;
+				padding: 5px 10px;
+				text-align: right;
+				text-transform: uppercase;}
+			legend:hover{
+				border-color: #aeb6bf;
+			}
+			input{
+				margin: 0px 0px 5px 0px;
+				box-sizing: border-box;
+				border-radius: 5px;
+				border-style: inset;
+			}
+			input[type="text"]:hover{				background-color: #ccd1d1;
+				border-color: #34495e;
+			}
+			input[type="password"]:hover{
+				background-color: #ccd1d1;
+				border-color: #34495e;
+				
+			}
+			
+		</style>
+
+    </head>
+    <body>           
+        <form action="">
+        	<fieldset>
+        		<legend>Sign In</legend>
+        		<label for="" id="_age" >Age
+        		</label>
+        		<input type="text" name="age" size="20" maxlength="2" id="age">		
+        		<br>
+        		<label for="" id="password" name="password" >Password
+        		</label>
+        		<input type="password" name="password_input" required="required" id="psswd">
+        		<br>
+            	<input type="button" size="80" name="_sign" value="Sign" onclick="getNumber(document.getElementById('age').value)">    
+            	<input type="button" size="80" name="_escape" value="Escape" onclick="correcttetxt()">
+            	
+			</fieldset>
+        	
+        </form>
+        
+        <h2>
+       		Matrix show
+        </h2>
+        <input type="button" onclick="createMatrix()" value="Click me">
+        
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

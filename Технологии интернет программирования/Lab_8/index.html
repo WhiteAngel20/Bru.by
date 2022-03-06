@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="text/html">
+		<title>LAB 08 вариант 3</title>
+		<!--<script await type="text/javascript" src="employee.js"></script>-->
+		<style>
+			input{
+				margin-bottom: 5px;
+				border-radius: 5px;
+				border-color: darkolivegreen;
+			}
+			input[type="button"]:hover{
+				cursor:pointer;
+			}
+		</style>
+		
+		<script>
+			function get_num_week(userdate){
+	console.log(userdate)
+	let m = userdate.split('-')[1];
+	console.log('m = ', m);
+	if (m[0] == "0"){
+		m = parseInt(m[1]);
+	}
+	else{
+		m = parseInt(m);
+	}
+	console.log('m = ' + typeof(m) + " m = " + m);
+	var dict_mounth = {};
+	dict_mounth[1] = 31;
+	dict_mounth[2] = 29;
+	dict_mounth[3] = 31;
+	dict_mounth[4] = 30;
+	dict_mounth[5] = 31;
+	dict_mounth[6] = 30;
+	dict_mounth[7] = 31;
+	dict_mounth[8] = 31;
+	dict_mounth[9] = 30;
+	dict_mounth[10] = 31;
+	dict_mounth[11] = 30;
+	dict_mounth[12] = 31;
+				
+	let w = 0;
+	for(var i =1; i < m;i++){
+		w+=dict_mounth[i];
+	}
+	alert("W " + w);
+	alert("Weeks is " + Math.round(w/7));
+}
+			var emplloyees = getEmployees()
+function getEmployees(){
+	let employees = {};
+	employees["employee1"] = 
+		["10-10-2012", "10-10-2022"];
+	employees["employee2"] = 
+		["18-01-2017", "02-03-2019"];
+	employees["employee3"] = 
+		["01-01-2020", "08-10-2021"];
+	employees["employee4"] = 
+		["20-12-2009", "21-07-2025"];
+	employees["employee5"] = 
+		["29-04-2018", "30-11-2024"];
+	employees["employee6"] = 
+		["10-03-2015", "06-06-2019"];
+	employees["employee7"] = 
+		["03-09-2022", "02-12-2024"];
+	console.log(employees);
+	return employees;
+}
+
+function AddEmployee(){
+	var lsnm = document.getElementById('_lastname').value;
+	var dt_off = document.getElementById('_yearswork').value;
+	var dt_on = document.getElementById('_datetimeON').value;
+	
+	y = dt_on.split('-')[0];
+	m = dt_on.split('-')[1];
+	d = dt_on.split('-')[2];
+	dt_on = d + "-"+m+"-"+y;
+	
+	y = dt_off.split('-')[0];
+	m = dt_off.split('-')[1];
+	d = dt_off.split('-')[2];
+	dt_off = d + "-"+m+"-"+y;
+	
+	emplloyees[lsnm] = [dt_on, dt_off];
+	alert(lsnm + " Add employee: "+  emplloyees[lsnm]);
+}
+			//who contract will have finished to ...
+function finished(date){
+	let tepm = [];
+	for(var key in emplloyees){
+		var vl = emplloyees[key]
+		if(vl[1] == date){
+			tepm.push(vl[1])
+		}
+	}
+	if (tepm.length == 0){
+		alert("NOT FOUND!!!");
+		return;
+	}
+	alert("Employee(s): ", tepm[0]);
+}
+
+var ems = [];			
+			function add_ems(m){
+				for(var key in emplloyees){
+					if(m.includes(emplloyees[key][1].split('-')[1] ))
+					   {
+						ems.push(key + ": " + emplloyees[key][1]);
+					}
+					
+				}
+			alert(ems);
+			}
+function quarter_temp(num){
+	num = parseInt(num);
+	switch(num){
+		case 1:{
+				let m = ["01","02","12"];
+				add_ems(m);
+			}
+		case 2:{
+				let m = ["03","04","05"];
+				add_ems(m);
+			}
+		case 3:{
+				let m = ["06","07","08"];
+				add_ems(m);
+		}
+		case 4:{
+				let m = ["09","10","11"];
+				add_ems(m);
+			}
+		}
+	}
+			
+			function currentContract_(date){
+				date = document.getElementById("current").value;
+				y = date.split('-')[0];
+				m = date.split('-')[1];
+				d = date.split('-')[2];
+				date = d + "-"+m+"-"+y;
+				console.log("date is " + date);
+				
+				for(var key in emplloyees){
+					if(emplloyees[key][0].split('-')[1] > date.split('-')[1]){
+						console.log(key);
+					}
+				}
+	
+	alert("Show in console");
+}
+		</script>
+		
+	</head>
+	<body>
+		<form id="for_weeks" name="">
+			<input type="date" name="date" id="to_weeks" min="2021-01-01" max="2021-12-31" width="12">
+			<input type="button" value="weeks..." onclick="get_num_week(document.getElementById('to_weeks').value)">
+		</form>
+		<p>
+			task 2
+		</p>
+	
+		<form id="_form" name="information">
+		<hgroup>
+			<h1>Write 10 employees</h1>
+		</hgroup>
+			<input type="text" id="_lastname" placeholder="Last name"><br>
+			<label for="">Datetime ON</label>
+			<input type="date" id="_datetimeON" placeholder="date" min="2000-01-01"><br>
+			<label for="">Datetime OFF</label>
+			<input type="date" id="_yearswork" min="2000-01-01"><br>
+			<input type="button" value="add" id="addinfo" onclick="AddEmployee()">
+			<br>
+			<h1>next</h1>
+			<label for="">Whose date</label>
+			<input type="date" id="whose_date">
+			<input type="button" value="set date" onclick="finished(document.getElementById('whose_date').value)">
+			<br>
+			
+			<input type="text" maxlength="1" placeholder="quarter" id="quarter">
+			<input type="button" value="quarter get" onclick="quarter_temp(document.getElementById('quarter').value)">
+			<br>
+			
+			<input type="date" id="current" value="2021-04-18">
+			<input type="button" id="dateset" value="Current Contract" onclick="currentContract_(document.getElementById('current').vlaue)">
+			<br>			
+		</form>
+		
+	</body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

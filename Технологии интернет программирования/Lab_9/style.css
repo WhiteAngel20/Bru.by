@@ -1,0 +1,50 @@
+.menu{
+	/*убирает нумерацию списка*/
+	list-style: none;
+	
+	/*http://htmlbook.ru/css/margin
+	Устанавливает величину отступа от каждого края элемента
+	*/
+	margin: 40px 0 5px;
+	
+	/*
+	http://htmlbook.ru/css/padding
+	Устанавливает значение полей вокруг содержимого элемента.
+	*/
+	padding: 20px 10px 20px;
+	text-align: center;
+	background: DarkKhaki;
+}
+button{
+	width: 102px;
+	height: 45px;
+	border: none;
+}
+
+a:link, a:visited{
+	 	display: inline-block;
+	 	background-color: white;
+  	 	color: black;
+  		border: 2px solid LightSlateGrey;
+	  	padding: 10px 20px;
+	  	text-align: center;
+	  	text-decoration: none;
+	  	display: inline-block;
+}
+a:hover, a:active{
+	background-color: SaddleBrown;
+	color: white;
+	cursor: alias;
+}
+li{
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+

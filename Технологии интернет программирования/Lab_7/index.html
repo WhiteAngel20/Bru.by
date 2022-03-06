@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="text/html">
+		<title>LAB 7</title>
+		<link href="table_style.css" type="text/css" rel="stylesheet"> 
+		<script src="computePrice.js" type="text/javascript"></script>
+		<script src="clearAllForm.js" type="text/javascript"></script>
+		<style>
+			.label{
+				display: inline-block;
+				text-align: center;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Var 1</h1>
+		<form id="aboutUser">
+			<label class="label" for="_lastname" >Last name</label>
+			<input type="text" id="_lastname" name="_lastname"  required>
+			<label class="clred">*required field</label><br>
+			<label class="label" for="_firstname">First name</label>
+			<input type="text" id="_firstname" name="_firstname" required><label class="clred">*required field</label><br>
+			<label class="label" for="_middlename">Middle name</label>
+			<input type="text" id="_middlename" name="_middlename"  required><label class="clred">*required field</label><br>
+			<label class="label" for="_age">Age</label>
+			<input type="text" id="_age" name="_age"><br>
+			<label class="label" for="_address">Address</label>
+			<input type="text" id="_address" name="_address"><br>
+			<label class="label" for="_email">E-mail</label>
+			<input type="text" id="_email" name="_email"><br>
+		</form>
+		<p></p>
+		
+		<table>
+			<tr>
+				<td>Name of course</td>
+				<td>Duration</td>
+				<td>Language</td>
+				<td>Reporting</td>
+				<td>Price</td>
+			</tr>
+			<tr>
+				<td>Informatic</td>
+				<td>
+					<input type="radio" id="36-info" name="duration_info" value="36">
+					<label for="36-info">36</label>
+					<input type="radio" id="64-info" name="duration_info" value="64">
+					<label for="64-info">64</label>
+					<input type="radio" id="128-info" name="duration_info" value="128">
+					<label for="128-info">128</label>
+				</td>
+				<td>
+					<input type="radio" id="ru-info" name="lang-ru-info" value="120">
+					<label for="ru-info">Russian</label><br>
+					<input type="radio" id="en-info" name="lang-en-info" value="150">
+					<label for="en-info">English</label>
+				</td>
+				<td>
+					<input type="radio" id="report-ex-info" name="report-exam-info" value="250">
+					<label for="report-ex">Exam</label><br>
+					<input type="radio" id="report-off-info" name="report-offset-info" value="130">
+					<label for="report-off">Offset</label>
+				</td>
+				<td>
+					<input type="text" id="totalPriceInfo" value="">
+				</td>
+			</tr>
+			<tr>
+				<td>Data base</td>
+				<td>
+					<input type="radio" id="36-db" name="duration_DB" value="36">
+					<label for="36-db">36</label>
+					<input type="radio" id="64-db" name="duration_DB" value="64">
+					<label for="64-db">64</label>
+					<input type="radio" id="128-db" name="duration_DB" value="128">
+					<label for="128-db">128</label>
+				</td>
+				<td>
+					<input type="radio" id="ru-lg-db" name="lang-ru-db" value="100">
+					<label for="ru-lg-db">Russian</label><br>
+					<input type="radio" id="en-lg-db" name="lang-en-db" value="140">
+					<label for="en-lg-db">English</label>
+				</td>
+				<td>
+					<input type="radio" id="report-ex-db" name="report-exam-db" value="360">
+					<label for="report-ex-db">Exam</label><br>
+					<input type="radio" id="report-off-db" name="report-offset-db" value="300">
+					<label for="report-off-db">Offset</label>
+				</td>
+				<td>
+					<input type="text" id="totalPriceDB" value="">
+				</td>
+			</tr>
+			<tr>
+				<td>Wide</td>
+				<td>
+					<input type="radio" id="36-wd" name="duration_wide" value="36">
+					<label for="36-wd">36</label>
+					<input type="radio" id="64-wd" name="duration_wide" value="64">
+					<label for="64-wd">64</label>
+					<input type="radio" id="128-wd" name="duration_wide" value="128">
+					<label for="128-wd">128</label>
+				</td>
+				<td>
+					<input type="radio" id="ru-lg-wd" name="lang-ru-wd" value="330">
+					<label for="ru-lg-wd">Russian</label><br>
+					<input type="radio" id="en-lg-wd" name="lang-en-wd" value="410">
+					<label for="en-lg-wd">English</label>
+				</td>
+				<td>
+					<input type="radio" id="report-ex-wd" name="report-exam-wd" value="500">
+					<label for="report-ex-wd">Exam</label><br>
+					<input type="radio" id="report-off-wd" name="report-offset-wd" value="230">
+					<label for="report-off-wd">Offset</label>
+				</td>
+				<td>
+					<input type="text" id="totalPriceWD" value="">
+				</td>
+			</tr>
+			<tr>
+				<td>Logic</td>
+				<td>
+					<input type="radio" id="36-lg" name="duration_Lg" value="36">
+					<label for="36-lg">36</label>
+					<input type="radio" id="64-lg" name="duration_Lg" value="64">
+					<label for="64-lg">64</label>
+					<input type="radio" id="128-lg" name="duration_Lg" value="128">
+					<label for="128-lg">128</label>
+				</td>
+				<td>
+					<input type="radio" id="ru-lg" name="lang-ru-lg" value="280">
+					<label for="ru-lg">Russian</label><br>
+					<input type="radio" id="en-lg" name="lang-en-lg" value="560">
+					<label for="en-lg">English</label>
+				</td>
+				<td>
+					<input type="radio" id="report-ex-lg" name="report-exam-lg" value="550">
+					<label for="report-ex-lg">Exam</label><br>
+					<input type="radio" id="report-off-lg" name="lang-en-lg" value="470">
+					<label for="report-off-lg">Offset</label>
+				</td>
+				<td>
+					<input type="text" id="totalPriceLG" value="">
+ 				</td>
+			</tr>
+			<tr>
+				<style>
+					.td{
+						border: 1px solid white;
+					}
+				</style>
+				<td class="td" colspan="3"></td>
+				<td>Total price</td>
+				<td>
+					<input type="text" id="allPrice" value="">
+				</td>
+			</tr>
+		</table>
+		<input type="button" value="Calculate" onclick="getTotalPrice()" size="30">
+		<input type="button" value="Cancel" onclick="clearAllInfo()">
+		
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

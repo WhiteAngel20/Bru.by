@@ -1,0 +1,18 @@
+h1.green{
+    color: green
+}
+h3.yellow{
+    color: yellow
+}
+<STYLE>
+    BODY{
+        background: #ffaacc;
+        color: #000001
+    }
+    H1{
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 16pt;
+        color: #006633
+    }
+    </STYLE>

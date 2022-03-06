@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<meta charset="utf-8" content="text/html">
+		<title>Lab 6</title>
+		<script type="text/javascript">
+			function getRandomObj(){
+				let arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+				let thing = arr[Math.round(Math.random(0, arr.length-1))];
+				alert(thing);
+				let vl = document.getElementById("arraylength").vaue;
+				console.log(vl);
+			}
+		</script>	
+	</head>
+	<body>
+	
+		<form id="getvalues">
+			<input type="button" id="randObj" value="random Obj" onclick="getRandomObj()">
+			
+			<label for="1">Enter length of array</label>
+			<input type="text" id="arraylength" name="ArrayLength" value="">
+			<input type="button" value="setL" id="leng" onclick="setArray(document.getElementById('arraylength').value)">
+			<label for="2">Enter: A or B</label>
+			<input type="text" value="" id="AB" width="5px">
+			<input type="button" id="sendVl" value="AddElmn" onclick="AddElement(document.getElementById('AB').value)">
+			<input type="button" id="showArr" onclick="showArray()" value="show">
+			
+			<input type="button" id="_call" value="set N run fnc" onclick="showME(document.getElementById('_clickme').value)">
+			<input type="text" id="_clickme" value="">	
+		</form>
+		
+		
+		<script type="text/javascript" src="array.js"></script>	
+	</body>
+</HTML>

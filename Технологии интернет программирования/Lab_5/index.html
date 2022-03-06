@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<meta charset="utf-8">
+		<title>LR 05</title>
+		<link href="imageeffect.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript">
+			function chan(obj){
+				var img_1 = Number(obj.a1.value);
+				var img_2 = Number(obj.a2.value);
+				if((img_1 < 1) || (img_1 > 3) || (img_2 < 1) || (img_2 > 3)){
+					alert("Error in the item of image")
+				}
+				else{
+					var swapper = document.images[img_1-1].src;
+					document.images[img_1-1].src = document.images[img_2-1].src;
+					document.images[img_2-1].src = swapper;
+				}
+			}
+			
+			function pictureMove(obj_img){
+				var tag = document.createElement("img");		//create a new tag
+				console.log(tag);
+				
+				tag.setAttribute("src", "1.jpg");//set attribute(s) for tag
+				tag.setAttribute("style", "border: 2px solid red");
+				tag.setAttribute("name", "picture"+obj_img.a1.value);
+				tag.setAttribute("width", "120");
+				
+				document.getElementById("1").appendChild(tag);//add to page
+				}
+		</script>
+	</HEAD>
+	<BODY>
+		<center>
+			<p id="1"></p>
+			<h4>List of images</h4><br>
+			
+			<img src="1.jpg" width="90" name="picture1" style="border: 5px solid black" alt="PICT 1">
+			<img src="2.jpg" width="90" name="picture2" style="border: 5px solid black" alt="PICT 2">
+			<img src="3.jpg" width="90" name="picture3" style="border: 5px solid black" alt="PICT 3"><br>
+			
+			<form name="pictures">
+				<label>PICTURE</label>
+				<input type="text" id="pic1" name="a1">
+				<p></p>
+				<label>PICTURE</label>
+				<input type="text" id="pic2" name="a2">
+				<p></p>
+				<input type="button" value="Swap pictures" onclick="chan(pictures)">
+				
+			</form>
+			<p></p>
+			<p>Task 2</p>
+			Click to move picture <input type="button" value="move down" onclick="pictureMove(pictures)">
+			
+			<p>TASK 3</p>
+			<img onmouseover="enlargetImg(this)" onmouseout="reduceImg(this)" border="0" src="1.jpg" alt="picture" width="250" height="200">
+			<script>
+				function enlargetImg(x){
+					x.style.height = "350px";
+					x.style.width = "250";
+				}
+				function reduceImg(x){
+					x.style.height = "150px";
+					x.style.width = "100px";
+				}
+			</script>
+			
+			<p>TASK 4</p>
+			<div id="css-menu">
+				<ul>
+					<li><a href="#">
+						<span class="text-top">Главная</span>
+						<span class="text-bottom">О нашем проекте</span>
+					</a></li>
+					<li><a href="#">
+						<span class="text-top">Справочник</span>
+						<span class="text-bottom">CSS справочник</span>
+					</a></li>
+					<li><a href="#">
+						<span class="text-top">CSS уроки</span>
+						<span class="text-bottom">Для начинающих</span>
+					</a></li>
+					<li><a href="#">
+						<span class="text-top">CSS меню</span>
+						<span class="text-bottom">Коллекция CSS меню</span>
+					</a></li>
+					</ul>
+				</div>
+		</center>
+	</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

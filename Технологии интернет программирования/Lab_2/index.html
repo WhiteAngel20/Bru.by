@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<HEAD>
+		<meta charset="utf-8">
+		<title> Lab 2</title>
+		<script type="text/javascript"></script>
+		<script src="mathoperation.js"></script>
+	</HEAD>
+	<BODY>
+		<p>Used: alert()</p>
+		<p>Example 1</p>
+		<script>
+			var _text = "text"
+			alert(_text)
+		</script>
+		
+		<p>Example 2</p>
+		<script>
+			var _text = "text"
+			alert(_text + " text2")
+		</script>
+		
+		<p>Example 3</p>
+		<script>
+			var _text = "text"
+			alert(_text + "\n" + _text)
+		</script>
+		
+		<p>Used confirm()</p>
+		<p>Example 1</p>
+		<script>
+			var res = confirm("If 2*2=4 press OK, else press FALSE")
+			if(res) alert("Good")
+			else alert("Fail")
+		</script>
+		
+		<p>Used prompt()</p>
+		<p>Example 1</p>
+		<script>
+			var str = prompt("2*2=","0")
+			if(str == "4") alert("Good")
+			else alert("Fail")
+		</script>
+		
+		<p>Main task</p>
+		<script>
+			var surname = prompt("Enter your surname", "")
+			var name = prompt("Enter your name", "")
+			var patronymic = prompt("Enter your patronymoc", "")
+			
+			var info = surname +" "+ name +" "+ patronymic
+			var iscorrectData = confirm(info)
+			if(iscorrectData) alert("Right\n" + info)
+			else alert("FAIL info")
+		</script>
+		
+		<p>Task 3</p>
+		<form name="_hypotenuse">
+			leg1<input type="text" name="_leg1">
+			leg2<input type="text" name="_leg2">
+			<input type="button" name="_calc" value="execute" onclick="getTriangleHypotenuse(document._hypotenuse._leg1.value, document._hypotenuse._leg1.value)">
+		</form>
+	</BODY>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
