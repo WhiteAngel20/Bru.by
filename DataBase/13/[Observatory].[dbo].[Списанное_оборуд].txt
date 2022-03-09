@@ -1,0 +1,34 @@
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (1, 'Нарушение правил эксплуатации')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (2, 'Нарушение  регулировки определенного узла')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (3, 'Износ отдельных деталей')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (4, 'Повышенный шум насоса')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (5, 'Повреждена манжета')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (6, 'Неисправность предохранительного клапана')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (7, 'Насос не нагнетает масло')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (8, 'Засорение всасывающей трубы')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (9, 'Засорение всасывающей трубы')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (10, 'Механическое воздействие')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (11, 'Попадания жидкости на основной механизм')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (12, 'взрыв сосуда высокого давления')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (13, 'Износ вследствие пластического деформирования')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (14, 'Утраченная намагниченность')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (15, 'Нарушением условий смазки')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (16, 'Предельные значения радиального биения')
+INSERT INTO [Observatory].[dbo].[Списанное_оборуд]
+VALUES (17, 'Износ цилиндров')

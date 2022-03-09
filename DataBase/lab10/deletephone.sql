@@ -1,0 +1,2 @@
+DELETE FROM Phone
+WHERE Size = 10

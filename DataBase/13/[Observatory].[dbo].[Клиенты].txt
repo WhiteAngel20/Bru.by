@@ -1,0 +1,40 @@
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (1, 'Контрист П.П.', '802225874', 1, 1, 1)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (2, 'Поломаев Н.Н.', '321654666', 2, 2, 2)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (3, 'Звездачников Ф.Г.', '676845133', 3, 3, 3)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (4, 'Криптин М.Е', '15543533', 4, 4, 4)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (5, 'Горбинов Д.Е.', '68463157', 5, 5, 5)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (6, 'Попов А.И.', '132456789', 6, 6, 6)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (7, 'Дурович С.Е.', '987456132', 7, 7, 7)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (8, 'Демиденко Я.В.', '357241689', 8, 8, 8)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (9, 'Жиренко М.М', '689537124', 9, 9, 9)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (10, 'Хомяков Н.Л', '196482375', 10, 10, 10)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (11, 'Шумяков Р.А.', '164957823', 11, 11, 11)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (12, 'Зайцев К.А', '396281745', 12, 12, 12)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (13, 'Женнин А.П', '941678325', 13, 13, 13)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (14, 'Жизненный Н.Л', '19132375', 14, 14, 14)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (11, 'Косолапый Р.А.', '98457823', 11, 11, 11)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (12, 'Зайец К.А', '194281745', 12, 12, 12)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (13, 'Жорданно А.П', '798678325', 13, 13, 13)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (15, 'Хомяк Н.Л', '196394375', 15, 15, 15)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (16, 'Куликова Р.А.', '164957942', 16, 16, 16)
+INSERT INTO [Observatory].[dbo].[Клиенты]
+VALUES (17, 'Деловой К.А', '396281332', 17, 17, 17)

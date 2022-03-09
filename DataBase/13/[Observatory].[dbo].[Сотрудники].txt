@@ -1,0 +1,35 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (1, 'Чарльз Дарвин', 10, '8-002-132456', 1, 5, 6, 8, 8, 2)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (2, 'Тим Бернерс-Ли', 7, '8-002-654321', 10, 2, 6, 13, 11, 16)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (3, 'Николас Уинтон', 9, '8-002-354126', 9, 3, 6, 11, 11, 15)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (4, 'Роза Паркс', 10, '8-002-987456', 7, 7, 4, 1, 11, 17)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (5, 'Анри Дюнан', 4, '8-002-159487', 9, 9, 7, 10, 11, 14)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (6, 'Симон Боливар', 13, '8-174-123653', 2, 3, 12, 15, 4, 5)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (7, 'Альберт Эйнштейн', 6, '8-174-184795', 3,4,5,6,7,8)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (8, 'Леонардо да Винчи', 2, '8-174-395286', 6,1,2,7,9,3)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (9, 'Христофор Колумб', 1, '8-174-176482', 13,16,11,3,8,6)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (10, 'Мартин Лютер Кин', 1, '8-174-495286', 7,4,9,10,6,4)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (11, 'Билл Гейтс', 14, '8-174-164978', 16,13,5,8,9,3)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (12, 'Уильям Шекспир', 21, '8-174-349782', 12,3,5,2,6,7)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (13, 'Зигмунд Фрейд', 4, '8-174-798465', 15,17,4,7,2,1)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (14, 'Оскар Шиндлер', 6, '8-255-132456', 14,3,5,1,9,10)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (15, 'Мать Тереза', 7, '8-255-894623', 17,16,3,2,10,14)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (16, 'Авраам Линкольн', 4, '8-255-164922', 10,12,10,10,12,15)
+INSERT INTO [Observatory].[dbo].[Сотрудники]
+VALUES (17, 'Стивен Хокинг', 2, '8-255-354621', 3,6,9,8,7,4)

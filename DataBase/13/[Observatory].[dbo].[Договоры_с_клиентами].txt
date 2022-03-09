@@ -1,0 +1,68 @@
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (1, 
+		convert(datetime,'18-06-12 10:34:09'),
+		1)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (2, 
+		convert(datetime,'17-06-12 10:34:09'),
+		2)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (3, 
+		convert(datetime,'16-06-12 10:34:09'),
+		3)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (4, 
+		convert(datetime,'15-06-12 10:34:09'),
+		4)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (5, 
+		convert(datetime,'14-06-12 10:34:09'),
+		5)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (6, 
+		convert(datetime,'13-06-12 10:34:09'),
+		6)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (7, 
+		convert(datetime,'12-06-12 10:34:09'),
+		7)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (8, 
+		convert(datetime,'11-06-12 10:34:09'),
+		8)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (9, 
+		convert(datetime,'10-06-12 10:34:09'),
+		9)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (10, 
+		convert(datetime,'09-06-12 10:34:09'),
+		10)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (11, 
+		convert(datetime,'15-06-11 10:34:09'),
+		11)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (12, 
+		convert(datetime,'14-06-10 10:34:09'),
+		12)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (13, 
+		convert(datetime,'13-06-09 10:34:09'),
+		13)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (14, 
+		convert(datetime,'12-06-08 10:34:09'),
+		14)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (15, 
+		convert(datetime,'11-06-07 10:34:09'),
+		15)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (16, 
+		convert(datetime,'10-06-06 10:34:09'),
+		16)
+INSERT INTO [Observatory].[dbo].[Договоры_с_клиентами]
+VALUES (17, 
+		convert(datetime,'10-06-05 10:34:09'),
+		17)

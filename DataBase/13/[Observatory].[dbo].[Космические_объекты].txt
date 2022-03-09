@@ -1,0 +1,34 @@
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (1, 123456789, 1, 'Близнецы')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (2, 456789123, 1, 'Водолей')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (3, 147258369, 1, 'Волопас')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (4, 369258147, 1, 'Гидра')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (5, 741852963, 1, 'Лев')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (6, 159489726, 12, 'Орион')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (7, 263195487, 65, 'Цефей')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (8, 482615973, 81, 'Персей')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (9, 482619537, 19, 'Телец')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (10, 94872631, 36, 'Чаша')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (11, 16497823, 95, 'Южная Гидра')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (12, 34679852, 10, 'Единорог')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (13, 321987654, 18, 'Скорпион')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (14, 166548973, 48, 'Большой Пёс')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (15, 629584717, 71, 'Близнецы')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (16, 369528411, 61, 'Кентавр')
+INSERT INTO [Observatory].[dbo].[Космические_объекты]
+VALUES (17, 132084689, 87, '	Южный Крест')

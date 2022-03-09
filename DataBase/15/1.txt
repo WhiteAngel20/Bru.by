@@ -1,0 +1,41 @@
+Use [Observatory]
+GO 
+CREATE VIEW CountEmployeesByPosts AS
+SELect Должность.Наименование, (SELECT count(dbo.Должность.Наименование)
+								from Должность, Сотрудники
+								WHERE Сотрудники.Должность_id = Должность.Должность_id) as postscount
+FROM Должность, Сотрудники
+
+Use [Observatory]
+GO
+CREATE VIEW Posts2 AS 
+SELECT  Должность.Наименование, 
+		COUNT(Должность.Наименование) 
+		AS counter_posts FROM Должность GROUP BY Должность.Наименование HAVING (COUNT(Должность.Наименование) > 0)
+
+
+CREATE VIEW Posts3 AS 
+SELECT  Должность.Наименование, 
+		COUNT(Должность.Наименование) 
+		AS counter_posts FROM Должность GROUP BY Должность.Наименование HAVING (COUNT(Должность.Наименование) > 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

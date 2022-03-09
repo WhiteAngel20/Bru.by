@@ -1,0 +1,34 @@
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (1, 'Сферическое кино', 100)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (2, 'Наблюдения в телескоп', 202)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (3, 'Лекция', 378)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (4, 'Курс лекций (1 месяц)', 478)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (5, 'Абонимент на наблюдения', 569)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (6, 'Наблюдение для кометой', 610)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (7, 'Сертификат', 716)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (8, 'Клуб "Галлилео"', 879)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (9, 'Курс лекций (2 месяца)', 911)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (10, 'Карта небо', 1007)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (11, 'Детский клуб', 698)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (12, 'Организация праздника', 700)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (13, 'Клуб "Галлилео" для детей', 889)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (14, 'Музей', 1037)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (15, 'Полет на 50 км', 498)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (16, 'Участие в проекте', 710)
+INSERT INTO [Observatory].[dbo].[Услуга]
+VALUES (17, 'Билет на смотровую площадку', 885)

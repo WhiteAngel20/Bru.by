@@ -1,0 +1,108 @@
+USE Observatory
+
+GO
+CREATE VIEW AboutSourvenirService AS
+SELECT  dbo.Услуга.Стоимость,
+		dbo.Услуга.Описание_услуги,
+		dbo.Сувениры.Наименование,
+		dbo.Сувениры.Цена
+FROM 
+	dbo.Услуга INNER JOIN dbo.Сувениры 
+	on dbo.Услуга.Услуга_id = dbo.Сувениры.Сувениры_id
+
+GO
+CREATE VIEW ListPositionEmployee AS
+SELECT dbo.Должность.Наименование
+FROM 
+	dbo.Должность INNER JOIN dbo.Сотрудники
+
+	on dbo.Сотрудники.Контактный_номер != null
+
+GO
+CREATE VIEW ReportingSpaceObjects AS
+SELECT dbo.Космические_объекты.[Размер км],
+		dbo.Отчёты.Дата_создания
+FROM 
+	dbo.Космические_объекты, 
+	dbo.Отчёты,
+	(SELECT * 
+		FROM dbo.Клиенты, dbo.Отчёты
+		WHERE dbo.Отчёты.Дата_создания > '2012-06-18 10:34:09.000'
+		) as reporting
+	WHERE dbo.Отчёты.Отчёты_id > 6
+
+GO
+CREATE VIEW GetMaxPriceSourvenirs AS
+SELECT dbo.Сувениры.Наименование,
+		dbo.Сувениры.Цена
+FROM dbo.Сувениры ORDER BY dbo.Сувениры.Цена ASC
+
+GO
+CREATE VIEW AboutEquipment AS
+SELECT dbo.Сост_оборуд.Описание_состояния,
+	dbo.Списанное_оборуд.Причина_списания
+FROM dbo.Списанное_оборуд INNER INTO dbo.Сост_оборуд 
+ON dbo.Списанное_оборуд.Списанное_оборуд_id > 6
+
+GO
+CREATE VIEW SerachByPattern AS
+SELECT dbo.Должность.Наименование
+FROM dbo.Должность WHERE dbo.Должность.Наименование LIKE '[И,К,С]%'
+
+GO
+CREATE VIEW OrderSourvenirByPrice AS
+SELECT dbo.Сувениры.Наименование,
+		dbo.Сувениры.Цена
+FROM dbo.Сувениры 
+	WHERE dbo.Сувениры.Цена > 
+		((SELECT SUM(dbo.Сувениры.Цена)) / (SELECT AVG(dbo.Сувениры.Цена)))
+	ORDER BY dbo.Сувениры.Цена DESC
+
+GO
+CREATE VIEW GetListClients AS
+SELECT  dbo.Клиенты.ФИО,
+		dbo.Клиенты.Контактный_номер
+FROM dbo.Клиенты
+	WHERE dbo.Клиенты.Клиенты_id >= 1
+
+GO
+CREATE VIEW InfoSpace AS
+SELECT dbo.Космические_объекты.Описание,
+		dbo.Космические_объекты.[Размер км],
+		dbo.Космические_объекты.[Расстояние_от_Земли св.лет]
+FROM dbo.Космические_объекты FULL OUTER JOIN dbo.Отчёты
+	ON dbo.Отчёты.Отчёты_id = dbo.Космические_объекты.Космические_объекты_id
+	WHERE dbo.Космические_объекты.[Размер км] > 100000000
+
+GO 
+CREATE VIEW AboutServis AS
+SELECT *
+		FROM dbo.Услуга
+		WHERE dbo.Услуга.Стоимость NOT LIKE NULL
+
+GO 
+CREATE VIEW InfoReportNotNull AS
+SELECT * 
+		FROM dbo.Отчёты
+		WHERE dbo.Отчёты.Дата_создания IS NOT NULL
+GO
+CREATE VIEW InfoStatement AS
+SELECT *
+		FROM dbo.Оборудование
+		WHERE dbo.Оборудование.Описание IS NOT NULL
+GO
+CREATE VIEW GetIDReporting AS
+SELECT * 
+		FROM dbo.Отчёты_Космические_объекты
+		WHERE dbo.Отчёты_Космические_объекты.Космические_объекты_id = dbo.Отчёты_Космические_объекты.Отчёты_id
+
+GO
+CREATE VIEW GetAllManadgers AS
+SELECT *
+		FROM dbo.Должность FULL OUTER JOIN dbo.Клиенты
+		ON dbo.Клиенты.Контактный_номер NOT LIKE NULL
+GO
+CREATE VIEW SearchPatternByEmployee AS
+SELECT * 
+		FROM dbo.Должность
+		WHERE dbo.Должность.Наименование LIKE 'Инженер'

@@ -1,0 +1,34 @@
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (1, 1, 'Кепка HACA (черная)')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (2, 2, 'Кошелек HACA (95х183)')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (3, 3, 'Носки с логотипом HACA')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (4, 4, 'Экосумка Космос')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (5, 5, 'Плед HACA (синий)')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (6, 6, 'Зонт Kevenhuk Star Sky')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (7, 7, 'Точилка Space Shuttle')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (8, 8, 'Кружка Комета')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (9, 9, 'Кружка Астронавт в космосе')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (10, 10, 'Книга "Введение в космос"')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (11, 11, 'Книга 3D модель Марсохода Curiosity')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (12, 12, '3D модель Space Shuttle Discovery')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (13, 31, 'Телескоп Levenhuk LabZZ MTB3')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (14, 78, 'Телескоп Levenhuk LabZZ T3')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (15, 39, 'Тарелка "В космосе"')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (16, 179, 'Тарелка "25 лет высадки на луну"')
+INSERT INTO [Observatory].[dbo].[Сувениры]
+VALUES (17, 41, 'Тарелка "Планета сатурн"')
